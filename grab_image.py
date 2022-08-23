@@ -8,8 +8,9 @@ def grab_image():
     chosen_img = random.choice(img_list)
 
     os.replace(f'images/{chosen_img}', f'used_images/{chosen_img}')
+    print(chosen_img)
 
     return chosen_img
 
-
+grab_image()
 
